@@ -1,0 +1,28 @@
+<div class="header">
+
+  <nav>
+      <ul >
+        <a (click)="GoToMain()" routerLink="/"><img class="logo" src="https://gdurl.com/agXu"></a>
+     </ul>
+   </nav>
+   <ul>
+       <div class="header_2">
+          <img class="unterschrift" src="https://gdurl.com/69ERz">
+       </div>
+   </ul>
+   <div class="tabs">
+    <a class="about" (click)="GoToAbout()" routerLink="/About"><img class="about" src="https://gdurl.com/M3rh"></a>
+    <a class="portfolio" (click)="GoToAbout()" routerLink="/Portfolio"><img class="portfolio" src="https://gdurl.com/r24K"></a>
+    </div>
+  <div *ngIf="isShown">
+    <app-Gallerie></app-Gallerie>
+  </div>
+
+</div>
+
+
+
+
+
+
+

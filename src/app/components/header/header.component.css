@@ -1,0 +1,82 @@
+.header{
+  text-align: center;
+  padding-right:-3px;
+
+}
+.logo{
+  text-align: center;
+  padding-right: 40px;
+}
+
+.unterschrift{
+   width: 23%;
+   text-align: center;
+}
+.about{
+  height: 100px;
+  color:red;
+}
+.about2{
+  height: 100px;
+}
+.portfolio{
+  height: 90px;
+}
+.portfolio2{
+  height: 90px;
+}
+.tabs{
+  text-align: center;
+  /* padding-left: 15%; */
+}
+
+ @media only screen and (max-width: 430px) {
+  .header{
+    position: absolute;
+    padding-right: 0;
+    /* margin-right:0px;
+    margin-left: 0; */
+    text-align: center;
+  }
+  .unterschrift{
+    width: 80%;
+    text-align: center;
+    padding-right: 10%;
+ }
+ .abc{
+   text-align: center;
+   padding-right: 10%;
+ }
+ .tabs{
+    /* padding-top: 800px; */
+    height: 200px;
+}
+.about{
+  padding-right: 15;
+}
+.portfolio{
+  padding-right: 15px;
+}
+}
+.abc{
+  background-color: rebeccapurple;
+  width: 100px;
+  height: 100px;
+}
+@media only screen and (max-width: 350px) {
+  .tabs{
+    padding-top: 10px;
+}
+}
+@media only screen and (max-width: 375px) {
+  .portfolio{
+    margin-bottom: 20vh;
+}
+}
+
+
+@media only screen and (max-width: 460px){
+  .logo{
+    margin-left: -40px;
+  }
+}

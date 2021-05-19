@@ -1,0 +1,49 @@
+<!-- <div class="img">
+  <img src="https://gdurl.com/WafYT" />
+</div>
+<div class="img">
+  <img src="https://gdurl.com/3LDL" />
+</div>
+<div class="img">
+  <img src="https://gdurl.com/O0Lh" />
+</div>
+<div class="img">
+  <img src="https://gdurl.com/v7Xt" />
+</div>
+<div class="img">
+  <img src="https://gdurl.com/Sch0" />
+</div>
+<div class="img">
+  <img src="https://gdurl.com/5DnG" />
+</div>
+<div class="img">
+  <img src="https://gdurl.com/kNcL" />
+</div>
+<div class="img">
+  <img src="https://gdurl.com/ENLy" />
+</div>
+<div class="img">
+  <img src="https://gdurl.com/mj2x" />
+</div>
+<div class="img">
+  <img src="https://gdurl.com/vV0m" />
+</div>
+<div class="img">
+  <img src="https://gdurl.com/9Fx3" />
+</div> -->
+
+<!-- <div *ngFor="let item of images">
+  <img
+        class="thumbnail"
+        src="{{ item.src }}"
+      />
+
+</div> -->
+<div class="image" *ngFor="let item of images">
+  <img class="image__img" src="{{ item.src }}">
+  <div class="image__overlay image__overlay--primary">
+      <div class="image__title"><a (click)="gotoSingleImage(item)" >{{ item.title }}</a></div>
+
+  </div>
+</div>
+

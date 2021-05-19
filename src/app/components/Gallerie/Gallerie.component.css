@@ -1,0 +1,222 @@
+img {
+  pointer-events: none;
+}
+.main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /* padding-top: 60vh; */
+}
+
+  .main h1 {
+      position: relative;
+      height: auto;
+      width: 550px;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 5% 0 2% 0;
+      text-align: center;
+      font-size: 2.8em;
+      /*font-weight: 650;*/
+      letter-spacing: 1.5px;
+      color: #017bf5;/*
+      border-left: 5px solid #017bf5;
+      border-right: 5px solid #017bf5;*/
+      /*background: rgba(0, 0, 0, 0.05);*/
+  }
+
+  .main p {
+      position: relative;
+      height: auto;
+      width: 100%;
+      text-align: center;
+      font-weight: 500;
+      font-size: 1.5em;
+      letter-spacing: 1px;
+      /*color: #777;*/
+  }
+
+  .main .gallery {
+      position: relative;
+      height: auto;
+      width: 90%;
+      margin: auto;
+      padding: 45px 0;
+      display: grid;
+      grid-template-columns: auto auto auto; /*i write auto four time because we want four rows*/
+      grid-gap: 2vh;
+      grid-auto-flow: dense;
+  }
+
+      .main .gallery .img {
+          position: relative;
+          height: 100%;
+          width: 100%;
+          overflow: hidden;
+          /*box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9 );*/
+          /*border-radius: 2px;*/
+      }
+
+          .main .gallery .img:first-child {
+              /*grid-column-start: span 2;*/
+              grid-row-start: span 1;
+          }
+/**/
+          .main .gallery .img:nth-child(2n+3) {
+              grid-row-start: span 1;
+          }
+
+          .main .gallery .img:nth-child(4n+5) {
+              grid-column-start: span 1;
+              grid-row-start: span 1;
+          }
+
+          .main .gallery .img:nth-child(6n+7) {
+              grid-row-start: span 2;
+          }
+
+          .main .gallery .img:nth-child(8n+9) {
+              grid-column-start: span 1;
+              grid-row-start: span 1;
+          }
+
+          .main .gallery .img img {
+              height: 100%;
+              width: 100%;
+              object-fit: cover;
+              /*filter: brightness(0.95) grayscale(100);*/
+              border-radius: 2px;
+              transition: 0.3s ease-in-out;
+          }
+
+          .main .gallery .img:hover img {
+              filter: brightness(1) grayscale(0);
+          }
+
+@media only screen and (max-width: 430px) {
+  .main .gallery {
+    position: relative;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    padding-top: 80vh;
+    display: grid;
+    grid-template-columns: auto auto auto; /*i write auto four time because we want four rows*/
+    grid-gap: 2vh;
+    grid-auto-flow: dense;
+}
+}
+@media only screen and (max-width: 460px){
+  .main .gallery{
+    padding-top: 100vh;
+  }
+}
+@media only screen and (max-width: 375px){
+  .main .gallery{
+    padding-top: 80vh;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .main .gallery {
+  padding-top: 115vh;
+  }
+}
+@media only screen and (max-height: 667px){
+  .main .gallery {
+    padding-top: 100vh;
+    }
+}
+@media only screen and (max-height: 568px){
+  .main .gallery {
+    padding-top: 115vh;
+    }
+}
+/* @media only screen and (max-width: 375px) {
+  .main .gallery {
+    padding-top: 98vh;
+  }
+} */
+/* @media only screen and (max-height: 670px) {
+  .main .gallery {
+    padding-top: 100vh;
+  }
+} */
+
+
+ /* @media only screen and (max-height: 667px) {
+   .gallery {
+    padding-top: 30vh;
+   }
+
+} */
+
+.about{
+  height: 100px;
+  color:red;
+}
+.about2{
+  height: 100px;
+}
+.portfolio{
+  height: 90px;
+}
+.portfolio2{
+  height: 90px;
+}
+.tabs{
+  text-align: center;
+  /* padding-left: 15%; */
+}
+.tabs{
+  /* padding-top: 800px; */
+  height: 200px;
+}
+.about{
+  padding-right: 15;
+}
+.portfolio{
+  padding-right: 15px;
+}
+@media only screen and (max-width: 430px) {
+  .header{
+    position: absolute;
+    padding-right: 0;
+    /* margin-right:0px;
+    margin-left: 0; */
+    text-align: center;
+  }
+  .unterschrift{
+    width: 80%;
+    text-align: center;
+    padding-right: 10%;
+ }
+ .abc{
+   text-align: center;
+   padding-right: 10%;
+ }
+ .tabs{
+    /* padding-top: 800px; */
+    height: 200px;
+}
+.about{
+  padding-right: 15;
+}
+.portfolio{
+  padding-right: 15px;
+}
+}
+.abc{
+  background-color: rebeccapurple;
+  width: 100px;
+  height: 100px;
+}
+@media only screen and (max-width: 350px) {
+  .tabs{
+    padding-top: 10px;
+}
+}
+@media only screen and (max-width: 375px) {
+  .portfolio{
+    margin-bottom: 20vh;
+}
+}
